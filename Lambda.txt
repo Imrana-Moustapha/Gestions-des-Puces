@@ -1,0 +1,23 @@
+std::sort(chip.begin(), chip.end(), [] (const Chip& a, const Chip& b){return a.Num < b.Num;});
+
+La partie entre crochets ([]) est une expression lambda. Les expressions lambda sont une fonctionnalité de C++ introduite dans le standard C++11, 
+qui permet de définir des fonctions anonymes de manière concise.
+
+Dans ce cas, la lambda est utilisée comme prédicat pour la fonction std::sort. 
+La lambda prend deux paramètres const Chip& a et const Chip& b (les éléments à comparer) et retourne true si la valeur de a.Num est inférieure à b.Num, et false sinon. Cela signifie que std::sort va trier le vecteur chip en fonction des valeurs de Num de chaque objet Chip dans l'ordre croissant.
+
+
+
+chip.erase(std::unique(chip.begin(), chip.end(), [](const Chip& a, const Chip& b){return a.Num == b.Num;}), chip.end());
+
+La fonction std::unique est utilisée pour éliminer les éléments consécutifs en double dans le vecteur chip. 
+La lambda est utilisée comme critère pour déterminer quels éléments sont considérés comme égaux. Dans ce cas, la lambda compare les valeurs de Num des objets Chip.
+
+Voici comment cela fonctionne :
+
+La lambda prend deux paramètres const Chip& a et const Chip& b.
+Si les valeurs de a.Num et b.Num sont égales, la lambda retourne true, indiquant que ces éléments sont considérés comme égaux.
+std::unique réorganise le vecteur pour placer les éléments uniques au début du vecteur.
+La fonction std::erase est ensuite utilisée pour supprimer les éléments en double du vecteur,
+qui sont maintenant situés à la fin du vecteur après l'appel de std::unique.
+En fin de compte, cela laisse le vecteur chip avec un ensemble unique d'éléments, sans éléments en double en fonction de la comparaison de Num.

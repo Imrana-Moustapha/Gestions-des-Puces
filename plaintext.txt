@@ -1,0 +1,19 @@
+[saadou@parrot]─[~/Documents/Code CPP]
+└──╼ $g++ saisie.cpp  -o saisie
+saisie.cpp: In function ‘std::string saisieMasque()’:
+saisie.cpp:61:39: error: ‘aMajuscule’ was not declared in this scope
+   61 |     } while (saisie.length() < 8 || !(aMajuscule && aMinuscule && aChiffre && aSpecial));
+      |                                       ^~~~~~~~~~
+saisie.cpp:61:53: error: ‘aMinuscule’ was not declared in this scope
+   61 |  } while (saisie.length() < 8 || !(aMajuscule && aMinuscule && aChiffre && aSpecial));
+      |                                                  ^~~~~~~~~~
+
+saisie.cpp:61:67: error: ‘aChiffre’ was not declared in this scope
+   61 | ie.length() < 8 || !(aMajuscule && aMinuscule && aChiffre && aSpecial));
+      |                                                  ^~~~~~~~
+
+saisie.cpp:61:79: error: ‘aSpecial’ was not declared in this scope
+   61 | < 8 || !(aMajuscule && aMinuscule && aChiffre && aSpecial));
+      |                                                  ^~~~~~~~
+
+┌─[✗]─[saadou@parrot]─[~/Documents/Code CPP]
