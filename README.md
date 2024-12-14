@@ -12,16 +12,20 @@ Fonctionnalités
 
 Installation
 1. Clonez le dépôt sur votre machine locale.
-    git clone https://github.com/votre-utilisateur/gestion-des-puces.git
+
+   git clone https://github.com/votre-utilisateur/gestion-des-puces.git
     
-2. Accédez au répertoire du projet.
-    cd gestion-des-puces
+3. Accédez au répertoire du projet.
+
+   cd gestion-des-puces
     
-3. Compilez le projet avec un compilateur C++ (par exemple, g++).
-    g++ *.cpp -o exemple.exe
+5. Compilez le projet avec un compilateur C++ (par exemple, g++).
+
+   g++ *.cpp -o exemple.exe
     
-4. Exécutez le programme.
-    ./exemple.exe
+7. Exécutez le programme.
+
+   ./exemple.exe
 
 1. Suivez les instructions affichées dans le programme pour ajouter, modifier, supprimer ou consulter des puces.
 2. Utilisez les options du menu pour naviguer entre les différentes fonctionnalités du programme.
@@ -38,10 +42,10 @@ Les contributions sont les bienvenues ! Pour proposer des modifications ou des a
 
 Auteurs
 - Imrana Moustapha - Développeur principal - [GitHub](https://github.com/Imrana-Moustapha)
-- SAADOU HABOU MOUSAL ACH ARI
-- RABE SAIDOU ADAMOU
-- ASSOUMANA MAHAMADOU ISSA
-- SALISSOU MAHAMANE ABOUBACAR
-- MAMANE IDE IDE
+- Saadou Habou Mousal Achi Ari
+- Rabe Saidou Adamou
+- Assoumane Mahamadou Issa
+- Salissou Mahamane Aboubcar
+- Mamane Ide Ide
 
 Merci à tous ceux qui ont contribué à ce projet, en particulier aux membres de la communauté open-source pour leur soutien et leurs idées.
