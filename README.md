@@ -13,7 +13,7 @@ Fonctionnalités
 Installation
 1. Clonez le dépôt sur votre machine locale.
 
-   git clone https://github.com/votre-utilisateur/gestion-des-puces.git
+   https://github.com/Imrana-Moustapha/Gestions-des-Puces
     
 3. Accédez au répertoire du projet.
 
