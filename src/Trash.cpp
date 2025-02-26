@@ -80,7 +80,7 @@ void Chip::Trash_clear ()
 
 void Chip::Update_Trash_file () const
 {
-    fstream file("../file/Trash.txt", ios::out);
+    fstream file("Trash.txt", ios::out);
 
     if (file.is_open())
     {
@@ -98,7 +98,7 @@ void Chip::Load_Trash_File()
 {
     Trash.clear();
 
-    fstream file("../file/Trash.txt", ios::in);
+    fstream file("Trash.txt", ios::in);
 
     if (file.is_open())
     {
