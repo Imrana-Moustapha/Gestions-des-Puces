@@ -544,7 +544,7 @@ return printf("\n\n\t\t\033[1m\033[31m The number +227 %d does not exist\033[0m\
 
 void Chip::Update_file () const
 {
-	fstream file("../file/File.txt", ios::out);
+	fstream file("File.txt", ios::out);
 
 	if(file.is_open())
 	{
@@ -560,7 +560,7 @@ void Chip::Read_file ()
 {// Vider le vecteur
 	chip.clear();
 
-	fstream file("../file/File.txt", ios::in);
+	fstream file("File.txt", ios::in);
 
 	if(file.is_open())
 	{
