@@ -67,7 +67,7 @@ void Chip::Main_menu ()
         {
             do
             {
-                system ("cls");
+                clear();
                 
                 case 1 : std::cout << "\n\n\t\t\033[1m Input \033[0m" << std::endl;
                         texte2 :
@@ -282,7 +282,7 @@ void Chip::Main_menu ()
             case 12 : std::cout << "\n\n\t\t\033[1m Trash \033[0m" << std::endl;
                 do
                 {   
-                    system ("cls");
+                    clear();
 
                     texte3 :
                         std::cout << "\n\n\t\t++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++";
